@@ -9,7 +9,7 @@ For every number, you have represented on the site its decimal representation an
 
 ## What I learned
 
-..* How to use HTML Collections
+* How to use HTML Collections
 
 ## See it in action
 
