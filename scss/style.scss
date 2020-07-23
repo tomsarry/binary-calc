@@ -1,15 +1,37 @@
+@import "utils";
+
 html, body {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: $bg-color;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    transition: top .1s ease,
+                opacity .1s ease; 
+
+    &:hover {
+        top: 25px;
+        opacity: .7;
+    }
+
+}
 
 .title {
     text-align: center;
     font-size: 4em;
-    color: lighten($color: #000000, $amount: 25%)
+    color: beige;
 }
 
 .result-div {
@@ -18,6 +40,8 @@ html, body {
 
     span {
         font-size: 3em;
+        font-weight: 300;
+        color: beige;
     }
 }
 
@@ -32,8 +56,8 @@ html, body {
 
 .light {
     border-radius: 50%;
-    border: 2px solid black;
-    background-color: white;
+    border: 2px solid beige;
+    background-color: $bg-color;
     width: 50px;
     height: 50px;
     margin: 5px 5px;
@@ -51,16 +75,19 @@ html, body {
 }
 
 .on {
-    background-color: green;
+    background-color: beige;
 }
 
 .btn {
     border-radius: 15px;
-    border: 2px solid black;
-    width: 130px;
+    color: white;
+    border: 1px solid white;
+    width: 200px;
     height: 50px;
     font-size: 1.3rem;
-    background-color: #5581ea;
+    background-color: #0e2864;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
     &:hover {
         opacity: .8;
@@ -68,6 +95,7 @@ html, body {
 }
 
 .reset {
-    background-color: red;
+    background-color: #a62626;
     color: white; 
+    border: 1px solid white
 }
