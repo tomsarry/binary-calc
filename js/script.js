@@ -6,9 +6,6 @@ var totalBinary;
 
 const lights = document.getElementsByClassName("light");
 
-console.log(lights.namedItem("light1"));
-
-
 
 function increment() {
     total = parseInt(result.innerHTML, 10) + 1;
@@ -36,6 +33,11 @@ function decrement() {
     lightRender(totalBinary);
 }
 
+function reset() {
+    result.innerHTML = 0
+    lightRender(0);
+}
+
 function lightRender(totalBinary) {
     let revBinary = numShift(totalBinary);
     // update the Array of lights
@@ -48,18 +50,17 @@ function lightRender(totalBinary) {
     }
 
     for (let j=0; j<light.length; j++) {
+        //get each ligh with the HTML collection and change the class
         if (light[j] == 1) {
             lights.namedItem("light".concat(j)).classList.add("on");
         } else {
             lights.namedItem("light".concat(j)).classList.remove("on");
         }
     }
-    console.log(light);
 }
 
-// console.log(numShift(10));
-
 function numShift(n) {
+    // invert the order of the number, add trailing 0's until 8
     n = n.toString();
     let shifted = "";
     for(let i=n.length-1; i>=0; i--) {
