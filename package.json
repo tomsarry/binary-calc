@@ -1,0 +1,23 @@
+{
+  "name": "binary-calc",
+  "version": "1.0.0",
+  "description": "A binary calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-sass scss --output css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomsarry/binary-calc.git"
+  },
+  "author": "tomsarrry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomsarry/binary-calc/issues"
+  },
+  "homepage": "https://github.com/tomsarry/binary-calc#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

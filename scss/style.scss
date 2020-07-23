@@ -32,11 +32,13 @@ body {
     text-align: center;
     font-size: 4em;
     color: beige;
+    margin: 50px 0;
 }
 
 .result-div {
     display: flex;
     justify-content: center;
+    margin: 30px 0;
 
     span {
         font-size: 3em;
@@ -64,7 +66,7 @@ body {
 }
 
 .controls {
-    margin: 50px auto;
+    margin: 90px auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,7 +85,7 @@ body {
     color: white;
     border: 1px solid white;
     width: 200px;
-    height: 50px;
+    height: 60px;
     font-size: 1.3rem;
     background-color: #0e2864;
     text-transform: uppercase;
